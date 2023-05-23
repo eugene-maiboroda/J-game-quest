@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <display-name>ServletTask</display-name>
+    <servlet>
+        <servlet-name>questServlet</servlet-name>
+        <servlet-class>com.web.application.gamequest.controller.QuestServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>questServlet</servlet-name>
+        <url-pattern>/quest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>authorizationServlet</servlet-name>
+        <servlet-class>com.web.application.gamequest.controller.AuthServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authorizationServlet</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+
+</web-app>
