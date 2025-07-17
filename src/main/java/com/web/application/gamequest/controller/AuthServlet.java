@@ -1,10 +1,10 @@
 package com.web.application.gamequest.controller;
-
 import javax.servlet.http.*;
 import java.io.IOException;
 
 
 public class AuthServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.sendRedirect("index.html");
@@ -12,6 +12,7 @@ public class AuthServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("==== QuestServlet#doPost get ====");
         request.setCharacterEncoding("UTF-8");
 
         int attempt = 1;

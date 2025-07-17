@@ -18,9 +18,9 @@ class RepositoryTest {
     @BeforeEach
     void creatRepositoryMock() {
         mock = mock(Repository.class);
-        q1 = new Question(1,"Ты потерял память, принять вызов НЛО", Question.Type.LOST);
-        q2 = new Question(2,"Ты принял вызов. Поднимаешься на мостик к капитану?", Question.Type.LOST);
-        answer =new Answer (1, "Принять вызов", q1, q2);
+        q1 = new Question(1, "You’ve lost your memory. Accept the UFO call", Question.Type.LOST);
+        q2 = new Question(2, "You accepted the call. Are you heading to the captain’s bridge?", Question.Type.LOST);
+        answer =new Answer (1, "Accept the call", q1, q2);
     }
 
     @Test
