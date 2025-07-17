@@ -34,8 +34,13 @@ The game logic includes:
 git clone https://github.com/eugene-maiboroda/J-game-quest.git
 ```
 
-3. Import the project into IntelliJ IDEA or Eclipse as a Maven Web Project
-4. Deploy `J-game-quest.war` to Tomcat's `webapps/` folder or run via IDE
+3. Open the project in IntelliJ IDEA or another IDE.
+4. Build the project with Maven:
+
+   ```bash
+   mvn clean install
+   ```
+4. Deploy J-game-quest.war to Tomcat webapps/ folder or run via your IDE
    <img width="858" height="838" alt="SCR-20250717-omld" src="https://github.com/user-attachments/assets/f061d177-9412-4e88-b5c7-b47e49877a18" />
 
 
